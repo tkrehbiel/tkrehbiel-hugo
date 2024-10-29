@@ -17,13 +17,17 @@ jobs:
       with:
         hugo-version: 'latest'
 
+    - name: Set up Google Cloud SDK
+      uses: google-github-actions/setup-gcloud@v2
+      with:
+        project_id: ${{ secrets.PROJECT_ID }}
+        service_account_key: ${{ secrets.GCP_KEY }}
+
     - name: Build Hugo website
       run: hugo --minify
 
     - name: Deploy to Google Cloud Storage
       env:
-        PROJECT_ID: ${{ secrets.PROJECT_ID }}
         BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
-        GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GCP_KEY }}
-      run: |
-        gsutil -m rsync -r public gs://$BUCKET_NAME
+      run: gcloud storage cp --recursive public/* gs://$BUCKET_NAME
+      
