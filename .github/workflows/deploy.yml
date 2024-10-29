@@ -1,0 +1,29 @@
+name: Deploy to Google Cloud Storage
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+
+    - name: Build Hugo website
+      run: hugo --minify
+
+    - name: Deploy to Google Cloud Storage
+      env:
+        PROJECT_ID: ${{ secrets.PROJECT_ID }}
+        BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
+        GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GCP_KEY }}
+      run: |
+        gsutil -m rsync -r public gs://$BUCKET_NAME
