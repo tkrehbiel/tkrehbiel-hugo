@@ -1,0 +1,4 @@
+baseURL = 'https://tkrehbiel.com/'
+languageCode = 'en-us'
+title = 'Thomas Krehbiel'
+theme = 'tkrehbiel'
