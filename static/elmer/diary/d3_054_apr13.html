@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Diary 3 — Apr 13 &middot; Elmer's WW1 Diaries</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css" />
+<script>
+  // Apply saved theme instantly to avoid light-mode flashes
+  (function() {
+    const theme = localStorage.getItem('elmer-theme') || 'parchment';
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+</head>
+<body class="page-view">
+<header class="site-header">
+  <div class="header-container">
+    <div class="header-main">
+      <a href="../index.html" class="site-title">Elmer's WW1 Diaries</a>
+    </div>
+    <div class="header-actions">
+      <a href="../index.html" class="header-contents-btn">Contents</a>
+      <div class="theme-switch-wrapper">
+        <label class="theme-label" for="theme-select">Theme</label>
+        <select id="theme-select" class="theme-select">
+          <option value="parchment">Parchment</option>
+          <option value="sepia">Sepia</option>
+          <option value="night">Night</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="spread">
+  <article class="transcription-text">
+    <h1 class="page-heading">Diary 3 — Apr 13</h1>
+    <p class="source-ref">diary3 / <span class="cr3">D3_054_Apr13_IMG_0004.CR3</span></p>
+    <div class="transcription-nav">  <a class="nav-btn nav-prev" href="../diary/d3_053_apr12.html">&larr; Previous Page</a>  <a class="nav-btn nav-next" href="../diary/d3_055_apr20.html">Next Page &rarr;</a></div>
+    <div class="transcription-content-wrapper">
+      <!-- Source: D3_054_Apr13_IMG_0004.CR3 -->
+<p>The hike back was awful, for<br />
+the weather got steadily worse.<br />
+We got in at 4 oclock, very tired<br />
+and very, very hungry.</p>
+<h2 id="sunday-apr-13">Sunday Apr 13</h2>
+<p>Got a detail today<br />
+for missing formation<br />
+on Saturday. Damn that ser-<br />
+geant.</p>
+<h2 id="monday-apr-14">Monday Apr 14</h2>
+<p>School is finee [sic] till<br />
+we are again settled<br />
+down, but we wont mention it<br />
+to anyone or we’ll have to drill.</p>
+<h2 id="tuesday-apr-15">Tuesday Apr 15</h2>
+<p>The company drilling<br />
+a little, me ducking<br />
+as usual. Took a walk to the<br />
+next village south. Nothing there.</p>
+<div class="editorial reference">
+<p>[See also: Elmer’s <a href="../letter/19190415_01.html">April 15
+letter</a>.]</p>
+</div>
+<h2 id="wednesday-apr-16">Wednesday Apr 16</h2>
+<p>Nothing doing,<br />
+a bad day.</p>
+<h2 id="thursday-apr-17">Thursday Apr 17</h2>
+<p>We hear that orders<br />
+are changed again. We<br />
+will move Tuesday of next week,<br />
+going to Renaucourt(?) and from<br />
+there to Nantes on the coast.</p>
+<div class="editorial reference">
+<p>[See also: Elmer’s <a href="../letter/19190417_01.html">April 17
+letter</a>.]</p>
+</div>
+<h2 id="friday-apr-18">Friday Apr 18</h2>
+<p>Business as usual, no-<br />
+thing new.</p>
+<h2 id="saturday-apr-19">Saturday Apr 19</h2>
+<p>Cleaned up for inspection,<br />
+but it didn’t come off.<br />
+Took the rest of the day off.</p>
+
+    </div>
+    <div class="transcription-nav">  <a class="nav-btn nav-prev" href="../diary/d3_053_apr12.html">&larr; Previous Page</a>  <a class="nav-btn nav-next" href="../diary/d3_055_apr20.html">Next Page &rarr;</a></div>
+  </article>
+  <div class="page-image"><a href="#" class="lightbox-trigger" aria-label="Open image in full screen lightbox"><img src="../images/diary/d3_054_apr13.webp" alt="Diary page Diary 3 — Apr 13" loading="lazy" /><span class="lightbox-hint"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> Click to enlarge</span></a></div><dialog id="image-lightbox" class="lightbox-dialog">  <button class="lightbox-close" aria-label="Close dialog">&times;</button>  <img class="lightbox-image" src="../images/diary/d3_054_apr13.webp" alt="Diary page Diary 3 — Apr 13 full resolution" /></dialog>
+</main>
+<footer class="site-footer">
+  <div class="footer-content">
+    <span class="archive-tag">Co. H, 316th Infantry &middot; American Expeditionary Forces &middot; 1918&ndash;1919</span>
+  </div>
+</footer>
+
+<script>
+  // Theme Toggle Logic
+  const themeSelect = document.getElementById('theme-select');
+  if (themeSelect) {
+    themeSelect.value = localStorage.getItem('elmer-theme') || 'parchment';
+    themeSelect.addEventListener('change', function() {
+      const theme = this.value;
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('elmer-theme', theme);
+    });
+  }
+
+  // Lightbox Modal Logic using Native <dialog>
+  const lightbox = document.getElementById('image-lightbox');
+  const trigger = document.querySelector('.lightbox-trigger');
+  const closeBtn = document.querySelector('.lightbox-close');
+
+  if (trigger && lightbox) {
+    trigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      lightbox.showModal();
+    });
+
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) {
+        lightbox.close();
+      }
+    });
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function() {
+        lightbox.close();
+      });
+    }
+  }
+</script>
+</body>
+</html>

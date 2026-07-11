@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Diary 1 — May 19 &middot; Elmer's WW1 Diaries</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css" />
+<script>
+  // Apply saved theme instantly to avoid light-mode flashes
+  (function() {
+    const theme = localStorage.getItem('elmer-theme') || 'parchment';
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+</head>
+<body class="page-view">
+<header class="site-header">
+  <div class="header-container">
+    <div class="header-main">
+      <a href="../index.html" class="site-title">Elmer's WW1 Diaries</a>
+    </div>
+    <div class="header-actions">
+      <a href="../index.html" class="header-contents-btn">Contents</a>
+      <div class="theme-switch-wrapper">
+        <label class="theme-label" for="theme-select">Theme</label>
+        <select id="theme-select" class="theme-select">
+          <option value="parchment">Parchment</option>
+          <option value="sepia">Sepia</option>
+          <option value="night">Night</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="spread">
+  <article class="transcription-text">
+    <h1 class="page-heading">Diary 1 — May 19</h1>
+    <p class="source-ref">diary1 / <span class="cr3">D1_016_May19_IMG_0003.CR3</span></p>
+    <div class="transcription-nav">  <a class="nav-btn nav-prev" href="../diary/d1_015_may17.html">&larr; Previous Page</a>  <a class="nav-btn nav-next" href="../diary/d1_017_may20.html">Next Page &rarr;</a></div>
+    <div class="transcription-content-wrapper">
+      <!-- Source: D1_016_May19_IMG_0003.CR3 -->
+<p>were going on passes were<br />
+inspected. I was one who<br />
+drew a short pass. But I<br />
+loaned out my good uniform,<br />
+and had to go in my old<br />
+one.</p>
+<p>I can’t say that I liked<br />
+the visit to town. It was<br />
+too short. I went to Keith’s(?)<br />
+and the Columbia, and ate<br />
+till it hurt. That was all<br />
+my vacation.</p>
+<div class="editorial chatgpt">
+<p>[Keith’s Theatre was one of Baltimore’s premier vaudeville theaters,
+part of the famous B. F. Keith theatrical circuit. Located on Lexington
+Street, it hosted a changing lineup of comedians, singers, musicians,
+and variety acts and was a popular destination for soldiers stationed at
+nearby Camp Meade during World War I.]</p>
+</div>
+<h2 id="may-19-sunday">May 19 Sunday</h2>
+<p>A Sunday just as<br />
+slow as they gen-<br />
+erally are. But I’ve found<br />
+a bright spot in the library.<br />
+There is good reading matter<br />
+there. I almost missed<br />
+retreat on that account,<br />
+I didn’t get there till<br />
+after roll call.</p>
+
+    </div>
+    <div class="transcription-nav">  <a class="nav-btn nav-prev" href="../diary/d1_015_may17.html">&larr; Previous Page</a>  <a class="nav-btn nav-next" href="../diary/d1_017_may20.html">Next Page &rarr;</a></div>
+  </article>
+  <div class="page-image"><a href="#" class="lightbox-trigger" aria-label="Open image in full screen lightbox"><img src="../images/diary/d1_016_may19.webp" alt="Diary page Diary 1 — May 19" loading="lazy" /><span class="lightbox-hint"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> Click to enlarge</span></a></div><dialog id="image-lightbox" class="lightbox-dialog">  <button class="lightbox-close" aria-label="Close dialog">&times;</button>  <img class="lightbox-image" src="../images/diary/d1_016_may19.webp" alt="Diary page Diary 1 — May 19 full resolution" /></dialog>
+</main>
+<footer class="site-footer">
+  <div class="footer-content">
+    <span class="archive-tag">Co. H, 316th Infantry &middot; American Expeditionary Forces &middot; 1918&ndash;1919</span>
+  </div>
+</footer>
+
+<script>
+  // Theme Toggle Logic
+  const themeSelect = document.getElementById('theme-select');
+  if (themeSelect) {
+    themeSelect.value = localStorage.getItem('elmer-theme') || 'parchment';
+    themeSelect.addEventListener('change', function() {
+      const theme = this.value;
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('elmer-theme', theme);
+    });
+  }
+
+  // Lightbox Modal Logic using Native <dialog>
+  const lightbox = document.getElementById('image-lightbox');
+  const trigger = document.querySelector('.lightbox-trigger');
+  const closeBtn = document.querySelector('.lightbox-close');
+
+  if (trigger && lightbox) {
+    trigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      lightbox.showModal();
+    });
+
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) {
+        lightbox.close();
+      }
+    });
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function() {
+        lightbox.close();
+      });
+    }
+  }
+</script>
+</body>
+</html>

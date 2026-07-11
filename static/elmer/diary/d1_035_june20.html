@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Diary 1 — June 20 &middot; Elmer's WW1 Diaries</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css" />
+<script>
+  // Apply saved theme instantly to avoid light-mode flashes
+  (function() {
+    const theme = localStorage.getItem('elmer-theme') || 'parchment';
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+</head>
+<body class="page-view">
+<header class="site-header">
+  <div class="header-container">
+    <div class="header-main">
+      <a href="../index.html" class="site-title">Elmer's WW1 Diaries</a>
+    </div>
+    <div class="header-actions">
+      <a href="../index.html" class="header-contents-btn">Contents</a>
+      <div class="theme-switch-wrapper">
+        <label class="theme-label" for="theme-select">Theme</label>
+        <select id="theme-select" class="theme-select">
+          <option value="parchment">Parchment</option>
+          <option value="sepia">Sepia</option>
+          <option value="night">Night</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="spread">
+  <article class="transcription-text">
+    <h1 class="page-heading">Diary 1 — June 20</h1>
+    <p class="source-ref">diary1 / <span class="cr3">D1_035_June20_IMG_0004.CR3</span></p>
+    <div class="transcription-nav">  <a class="nav-btn nav-prev" href="../diary/d1_034_june18.html">&larr; Previous Page</a>  <a class="nav-btn nav-next" href="../diary/d1_036_june22.html">Next Page &rarr;</a></div>
+    <div class="transcription-content-wrapper">
+      <!-- Source: D1_035_June20_IMG_0004.CR3 -->
+<p>very stimulating work - not(?).</p>
+<div class="editorial chatgpt">
+<p>In a World War I training context, <strong>cement grenades</strong>
+were exactly what they sound like: practice hand grenades made from
+cement (concrete), used to train soldiers in throwing and grenade
+handling without wasting live explosives.</p>
+<p>A typical training grenade consisted of:</p>
+<ul>
+<li>a metal handle or body similar in shape to a live grenade</li>
+<li>a cement-filled head to approximate the weight</li>
+<li>sometimes a small spotting charge or blank cartridge to indicate
+where it landed</li>
+</ul>
+<p>The goal was to teach:</p>
+<ul>
+<li>proper throwing technique</li>
+<li>judging distance</li>
+<li>use of cover</li>
+<li>trench grenade tactics</li>
+</ul>
+<p>without the danger and expense of using live grenades every day.</p>
+</div>
+<div class="editorial research">
+<p>[That’s not a misread, it really says “not!” at the end there.
+Apparently that sarcastic sentence construction we associate with
+<em>Wayne’s World</em> goes back to at least 1918.]</p>
+</div>
+<h2 id="thursday-june-20">Thursday June 20</h2>
+<p>We had battle pra-<br />
+ctise [sic] again this<br />
+morning, this time by the<br />
+whole regiment. I suppose<br />
+it went off all right, we<br />
+went through the whole<br />
+program. But our part<br />
+was of course small, so<br />
+I don’t know much of the<br />
+business.</p>
+<p>In the afternoon<br />
+our winter clothing was<br />
+issued. Otherwise we were<br />
+on the assault course.</p>
+<h2 id="friday-june-21">Friday June 21</h2>
+<p>We drilled with<br />
+the old company<br />
+today. They are as<br />
+rotten as we are.</p>
+<p>In the evening<br />
+we had a feed, in honor</p>
+
+    </div>
+    <div class="transcription-nav">  <a class="nav-btn nav-prev" href="../diary/d1_034_june18.html">&larr; Previous Page</a>  <a class="nav-btn nav-next" href="../diary/d1_036_june22.html">Next Page &rarr;</a></div>
+  </article>
+  <div class="page-image"><a href="#" class="lightbox-trigger" aria-label="Open image in full screen lightbox"><img src="../images/diary/d1_035_june20.webp" alt="Diary page Diary 1 — June 20" loading="lazy" /><span class="lightbox-hint"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> Click to enlarge</span></a></div><dialog id="image-lightbox" class="lightbox-dialog">  <button class="lightbox-close" aria-label="Close dialog">&times;</button>  <img class="lightbox-image" src="../images/diary/d1_035_june20.webp" alt="Diary page Diary 1 — June 20 full resolution" /></dialog>
+</main>
+<footer class="site-footer">
+  <div class="footer-content">
+    <span class="archive-tag">Co. H, 316th Infantry &middot; American Expeditionary Forces &middot; 1918&ndash;1919</span>
+  </div>
+</footer>
+
+<script>
+  // Theme Toggle Logic
+  const themeSelect = document.getElementById('theme-select');
+  if (themeSelect) {
+    themeSelect.value = localStorage.getItem('elmer-theme') || 'parchment';
+    themeSelect.addEventListener('change', function() {
+      const theme = this.value;
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('elmer-theme', theme);
+    });
+  }
+
+  // Lightbox Modal Logic using Native <dialog>
+  const lightbox = document.getElementById('image-lightbox');
+  const trigger = document.querySelector('.lightbox-trigger');
+  const closeBtn = document.querySelector('.lightbox-close');
+
+  if (trigger && lightbox) {
+    trigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      lightbox.showModal();
+    });
+
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) {
+        lightbox.close();
+      }
+    });
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function() {
+        lightbox.close();
+      });
+    }
+  }
+</script>
+</body>
+</html>

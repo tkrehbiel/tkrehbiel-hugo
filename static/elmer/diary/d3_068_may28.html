@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Diary 3 — May 28 &middot; Elmer's WW1 Diaries</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css" />
+<script>
+  // Apply saved theme instantly to avoid light-mode flashes
+  (function() {
+    const theme = localStorage.getItem('elmer-theme') || 'parchment';
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+</head>
+<body class="page-view">
+<header class="site-header">
+  <div class="header-container">
+    <div class="header-main">
+      <a href="../index.html" class="site-title">Elmer's WW1 Diaries</a>
+    </div>
+    <div class="header-actions">
+      <a href="../index.html" class="header-contents-btn">Contents</a>
+      <div class="theme-switch-wrapper">
+        <label class="theme-label" for="theme-select">Theme</label>
+        <select id="theme-select" class="theme-select">
+          <option value="parchment">Parchment</option>
+          <option value="sepia">Sepia</option>
+          <option value="night">Night</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="spread">
+  <article class="transcription-text">
+    <h1 class="page-heading">Diary 3 — May 28</h1>
+    <p class="source-ref">diary3 / <span class="cr3">D3_068_May28_IMG_0024.CR3</span></p>
+    <div class="transcription-nav">  <a class="nav-btn nav-prev" href="../diary/d3_067_may26.html">&larr; Previous Page</a>  <a class="nav-btn nav-next" href="../diary/d3_069_may30.html">Next Page &rarr;</a></div>
+    <div class="transcription-content-wrapper">
+      <!-- Source: D3_068_May28_IMG_0024.CR3 -->
+<p>Soon a bank of woods became<br />
+visible on our left. These gave<br />
+way to farmed fields on both<br />
+sides, and then we knew<br />
+that we were once more in<br />
+the United States.</p>
+<p>From Chester on up the<br />
+river on both sides were lined<br />
+with factories and all of them<br />
+opened their whistles wide<br />
+when we came along. The<br />
+railroads and steamers on<br />
+the rivers did the same.<br />
+About five miles below Phila(?)<br />
+a fleet of excursia(?) boats<br />
+met us and escorted us in.<br />
+When we reached the harbor<br />
+the whistles were so loud that<br />
+we could not hear our band<br />
+playing one hundred feet away.<br />
+We docked at the Snyder(?)<br />
+Ave whaff [sic] at Philadelphia, about<br />
+2 P.M.</p>
+<p>We were immediately in-<br />
+loaded and, on the dock,<br />
+served ice cream and cake<br />
+by the Red Cross, the first<br />
+in one year. Then we were</p>
+
+    </div>
+    <div class="transcription-nav">  <a class="nav-btn nav-prev" href="../diary/d3_067_may26.html">&larr; Previous Page</a>  <a class="nav-btn nav-next" href="../diary/d3_069_may30.html">Next Page &rarr;</a></div>
+  </article>
+  <div class="page-image"><a href="#" class="lightbox-trigger" aria-label="Open image in full screen lightbox"><img src="../images/diary/d3_068_may28.webp" alt="Diary page Diary 3 — May 28" loading="lazy" /><span class="lightbox-hint"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg> Click to enlarge</span></a></div><dialog id="image-lightbox" class="lightbox-dialog">  <button class="lightbox-close" aria-label="Close dialog">&times;</button>  <img class="lightbox-image" src="../images/diary/d3_068_may28.webp" alt="Diary page Diary 3 — May 28 full resolution" /></dialog>
+</main>
+<footer class="site-footer">
+  <div class="footer-content">
+    <span class="archive-tag">Co. H, 316th Infantry &middot; American Expeditionary Forces &middot; 1918&ndash;1919</span>
+  </div>
+</footer>
+
+<script>
+  // Theme Toggle Logic
+  const themeSelect = document.getElementById('theme-select');
+  if (themeSelect) {
+    themeSelect.value = localStorage.getItem('elmer-theme') || 'parchment';
+    themeSelect.addEventListener('change', function() {
+      const theme = this.value;
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('elmer-theme', theme);
+    });
+  }
+
+  // Lightbox Modal Logic using Native <dialog>
+  const lightbox = document.getElementById('image-lightbox');
+  const trigger = document.querySelector('.lightbox-trigger');
+  const closeBtn = document.querySelector('.lightbox-close');
+
+  if (trigger && lightbox) {
+    trigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      lightbox.showModal();
+    });
+
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) {
+        lightbox.close();
+      }
+    });
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function() {
+        lightbox.close();
+      });
+    }
+  }
+</script>
+</body>
+</html>
